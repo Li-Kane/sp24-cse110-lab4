@@ -32,5 +32,7 @@
   * E: `false` because true casts to 1 and 1 != 2
   * F: `true` because in Boolean, any int not 0 is constructed as true so true === true.
 15. `==` references equality comparison with typecasting. `===` does no typecasting and requires the types to be the same.
+16. File
 17. [2,4,6] is returned. This is because doSomething is declared as a function that doubles whatever the input is. Therefore, since doSomething is passed in as callback, it is applied to all elements of the input [1,2,3], doubling all of them.
+18. File
 19. `1, 4, 3, 2` is outputted. 1 and 4 are printed instantly since setTimeout is non-blocking. 3 is printed after since it has no timeout, and 2 is printed last due to a 1s timeout.
