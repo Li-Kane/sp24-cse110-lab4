@@ -1,0 +1,2 @@
+1. The bug was that num1 and num2's values were being loaded as strings, causing java + to be evaluated as concatenataion rather than addition. 
+2. I chose to fix it, by using Number(num1) + Number(num2) when calculating the sum. This way, the values also work with negatives and decimal numbers. Though, the sum is now NaN if a letter is input, I think it's reasonable functionality. ![image](../../expand/screenshots/debug-fix.png)
